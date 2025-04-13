@@ -17,4 +17,13 @@ public class Vetor {
 			throw new Exception("Todas as posicoes do vetor estao ocupadas");
 		}
 	}
+	
+	public boolean adiciona_alternativa(String elemento) {
+		if (this.tamanho < this.elementos.length) {
+			this.elementos[tamanho] = elemento;
+			this.tamanho++;
+			return true;
+		}
+		return false;
+	}
 }
